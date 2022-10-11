@@ -11,6 +11,7 @@
 #include "game_engine/defines/ActionEventDefines.h"
 #include "utils/ErrorCode.h"
 #include "robo_collector_interfaces/msg/robot_move_type.hpp"
+#include "robo_collector_interfaces/msg/robot_move_type.hpp"
 
 //Own components headers
 

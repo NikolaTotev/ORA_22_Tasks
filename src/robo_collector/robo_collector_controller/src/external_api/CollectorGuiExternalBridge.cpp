@@ -40,19 +40,10 @@ void CollectorGuiExternalBridge::publishToggleHelpPage() const {
 }
 
 void CollectorGuiExternalBridge::publishRobotAct(
-    [[maybe_unused]]MoveType moveType) const {
- 
-  constexpr size_t queueSize = 10;
-  const rclcpp::QoS qos(queueSize);
-  rclcpp::QoS latchQoS = qos;
-  //enable message latching for late joining subscribers
-  latchQoS.transient_local();
-
-      rclcpp::PublisherOptions publisherOptions;
-      publisherOptions.callback_group = _publishersCallbackGroup;
-
-      _robotMovePublisher = create_publisher<RobotMoveType>(ROBOT_MOVE_TYPE_TOPIC, qos,publisherOptions);
-
+    [[maybe_unused]]MoveType moveType) const {    
+      RobotMoveType message;
+      message.move_type = getMoveTypeField(moveType);
+      _robotMovePublisher->publish(message);
 }
 
 void CollectorGuiExternalBridge::publishUserAuthenticate(const UserData &data) {
@@ -104,6 +95,8 @@ ErrorCode CollectorGuiExternalBridge::initCommunication() {
 
   _toggleDebugInfoPublisher = create_publisher<Empty>(TOGGLE_DEBUG_INFO_TOPIC,
       queueSize, publisherOptions);
+
+  _robotMovePublisher = create_publisher<RobotMoveType>(ROBOT_MOVE_TYPE_TOPIC, qos, publisherOptions);
 
   _enableRobotTurnSubscription = create_subscription<Empty>(
       ENABLE_ROBOT_INPUT_TOPIC, queueSize,
