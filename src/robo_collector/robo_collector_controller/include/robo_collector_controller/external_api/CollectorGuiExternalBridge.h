@@ -10,11 +10,12 @@
 #include "robo_collector_common/defines/RoboCollectorFunctionalDefines.h"
 #include "game_engine/defines/ActionEventDefines.h"
 #include "utils/ErrorCode.h"
+#include "robo_collector_interfaces/msg/robot_move_type.hpp"
 
 //Own components headers
 
 //Forward declarations
-
+  
 struct CollectorGuiExternalBridgeOutInterface {
   InvokeActionEventCb invokeActionEventCb;
   EnablePlayerInputCb enablePlayerInputCb;
@@ -35,6 +36,7 @@ public:
 private:
   using UserAuthenticate = robo_collector_interfaces::msg::UserAuthenticate;
   using Empty = std_msgs::msg::Empty;
+  using RobotMoveType = robo_collector_interfaces::msg::RobotMoveType;
 
   ErrorCode initOutInterface(
       const CollectorGuiExternalBridgeOutInterface &outInterface);
@@ -47,9 +49,9 @@ private:
   rclcpp::Publisher<UserAuthenticate>::SharedPtr _userAuthenticatePublisher;
   rclcpp::Publisher<Empty>::SharedPtr _toggleHelpPagePublisher;
   rclcpp::Publisher<Empty>::SharedPtr _toggleDebugInfoPublisher;
-
   rclcpp::Subscription<Empty>::SharedPtr _enableRobotTurnSubscription;
   rclcpp::Subscription<Empty>::SharedPtr _shutdownControllerSubscription;
+  rclcpp::Publisher<RobotMoveType>::SharedPtr _robotMovePublisher;
 
   //Create different callbacks groups for publishers and subscribers
   //so they can be executed in parallel

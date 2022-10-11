@@ -41,8 +41,18 @@ void CollectorGuiExternalBridge::publishToggleHelpPage() const {
 
 void CollectorGuiExternalBridge::publishRobotAct(
     [[maybe_unused]]MoveType moveType) const {
-  LOGR("Oh no ... nothing happened ... and the buttons remained locked. "
-       "Maybe something will unlock them externally?");
+ 
+  constexpr size_t queueSize = 10;
+  const rclcpp::QoS qos(queueSize);
+  rclcpp::QoS latchQoS = qos;
+  //enable message latching for late joining subscribers
+  latchQoS.transient_local();
+
+      rclcpp::PublisherOptions publisherOptions;
+      publisherOptions.callback_group = _publishersCallbackGroup;
+
+      _robotMovePublisher = create_publisher<RobotMoveType>(ROBOT_MOVE_TYPE_TOPIC, qos,publisherOptions);
+
 }
 
 void CollectorGuiExternalBridge::publishUserAuthenticate(const UserData &data) {
@@ -125,4 +135,3 @@ void CollectorGuiExternalBridge::onControllerShutdownMsg(
 
   _outInterface.invokeActionEventCb(f, ActionEventType::NON_BLOCKING);
 }
-

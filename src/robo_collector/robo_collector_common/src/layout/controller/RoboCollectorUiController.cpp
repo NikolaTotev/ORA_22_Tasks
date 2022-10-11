@@ -107,4 +107,3 @@ void RoboCollectorUiController::unlockInput() {
 bool RoboCollectorUiController::isEnabled() const {
   return LocalControllerMode::ENABLED == _mode;
 }
-

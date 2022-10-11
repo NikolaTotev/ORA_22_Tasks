@@ -56,3 +56,18 @@ private:
 };
 
 #endif /* ROBO_COLLECTOR_COMMON_ROBOCOLLECTORUICONTROLLER_H_ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

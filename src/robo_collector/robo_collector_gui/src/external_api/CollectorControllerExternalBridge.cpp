@@ -41,14 +41,15 @@ void CollectorControllerExternalBridge::publishEnablePlayerInput() {
   };
   _outInterface.invokeActionEventCb(f, ActionEventType::NON_BLOCKING);
 
-  _playerEnableInputPublisher->publish(Empty());
+  _playerEnableInputPublisher->publish(Empty()); //TODO This empty thing is sus...
+
 }
 
 //called from the main thread
 void CollectorControllerExternalBridge::publishShutdownController() {
   _controllerStatus = ControllerStatus::SHUTTING_DOWN;
 
-  _shutdownControllerPublisher->publish(Empty());
+  _shutdownControllerPublisher->publish(Empty()); //TODO This empty thing is sus...
 }
 
 ErrorCode CollectorControllerExternalBridge::initOutInterface(
