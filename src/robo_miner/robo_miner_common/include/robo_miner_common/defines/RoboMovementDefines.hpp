@@ -13,6 +13,9 @@ enum class Direction{
     BACKWARD
 };
 
-struct  MoveResult{
-
+struct MoveResult{
+    bool is_success;
+    int8_t in_front;
+    int8_t in_left;
+    int8_t in_right;
 };

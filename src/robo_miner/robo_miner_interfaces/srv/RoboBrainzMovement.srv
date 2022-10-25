@@ -1,0 +1,6 @@
+int8 robot_move_type
+---
+bool is_success
+int8 in_front
+int8 in_left
+int8 in_right

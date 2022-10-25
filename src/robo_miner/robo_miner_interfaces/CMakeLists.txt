@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.10)
 project(robo_miner_interfaces)
 
 find_package(ament_cmake REQUIRED)
+find_package(robo_miner_common REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -19,6 +20,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/LongestSequenceValidate.srv"
   "srv/FieldMapValidate.srv"
   "srv/QueryInitialRobotPosition.srv"
+  "srv/RoboBrainzMovement.srv"
 )
 
 set_target_properties(
