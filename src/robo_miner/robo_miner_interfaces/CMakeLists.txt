@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/UInt8MultiArray.msg"
   "msg/RobotMoveType.msg"
   "msg/UserAuthenticate.msg"
+  "msg/RoboDirection.msg"
   
   "srv/ActivateMiningValidate.srv"
   "srv/RobotMove.srv"

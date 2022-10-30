@@ -15,12 +15,14 @@ find_package(robo_miner_common REQUIRED)
 find_package(robo_miner_interfaces REQUIRED)
 
 set(_INC_FOLDER_NAME include)
-set(_INC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/${_INC_FOLDER_NAME}/${PROJECT_NAME})
+set(_INC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/${_INC_FOLDER_NAME})
 set(_SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 add_executable(
 	${PROJECT_NAME}		
-		${_SRC_DIR}/main.cpp
+		${_SRC_DIR}/main.cpp      
+        ${_SRC_DIR}/external_api/RoboMovementExternalBridge.cpp  
+        ${_INC_DIR}/external_api/RoboMovementExternalBridge.hpp
 )
 
 target_include_directories(

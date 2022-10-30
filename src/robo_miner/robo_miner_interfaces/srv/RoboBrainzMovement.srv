@@ -1,6 +1,4 @@
-int8 robot_move_type
+RobotMoveType direction
 ---
 bool is_success
-int8 in_front
-int8 in_left
-int8 in_right
+uint8[3] surrounding_tiles
