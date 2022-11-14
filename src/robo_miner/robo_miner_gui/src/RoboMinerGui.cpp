@@ -23,6 +23,7 @@ ErrorCode RoboMinerGui::init(const std::any &cfg) {
   }
 
   _communicatorInterface.registerNodeCb(_controllerExternalBridge);
+  
   return ErrorCode::SUCCESS;
 }
 

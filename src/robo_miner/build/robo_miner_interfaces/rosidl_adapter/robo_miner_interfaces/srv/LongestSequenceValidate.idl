@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_miner_interfaces/srv/LongestSequenceValidate.srv
+// generated code does not contain a copyright notice
+
+#include "robo_miner_interfaces/msg/FieldPoint.idl"
+
+module robo_miner_interfaces {
+  module srv {
+    struct LongestSequenceValidate_Request {
+      sequence<robo_miner_interfaces::msg::FieldPoint> sequence_points;
+    };
+    struct LongestSequenceValidate_Response {
+      boolean success;
+
+      string error_reason;
+    };
+  };
+};

@@ -1,0 +1,3 @@
+
+RobotPositionResponse robot_position_response
+uint8 robot_initial_tile

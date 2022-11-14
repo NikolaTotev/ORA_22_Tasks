@@ -1,0 +1,26 @@
+[0.172s] Invoking command in '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces
+[1.840s] -- The C compiler identification is GNU 9.4.0
+[2.471s] -- The CXX compiler identification is GNU 9.4.0
+[2.600s] -- Check for working C compiler: /usr/bin/cc
+[2.860s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.864s] -- Detecting C compiler ABI info
+[3.117s] -- Detecting C compiler ABI info - done
+[3.157s] -- Detecting C compile features
+[3.160s] -- Detecting C compile features - done
+[3.174s] -- Check for working CXX compiler: /usr/bin/c++
+[3.449s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.452s] -- Detecting CXX compiler ABI info
+[3.671s] -- Detecting CXX compiler ABI info - done
+[3.690s] -- Detecting CXX compile features
+[3.691s] -- Detecting CXX compile features - done
+[5.130s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[5.358s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[5.358s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.487s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[6.550s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.623s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[7.668s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[7.765s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.114s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.478s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[13.773s] Invoked command in '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces

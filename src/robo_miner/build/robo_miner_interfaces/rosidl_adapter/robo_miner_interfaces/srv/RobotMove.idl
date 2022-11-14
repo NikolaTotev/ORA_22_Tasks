@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_miner_interfaces/srv/RobotMove.srv
+// generated code does not contain a copyright notice
+
+#include "robo_miner_interfaces/msg/RobotMoveType.idl"
+#include "robo_miner_interfaces/msg/RobotPositionResponse.idl"
+
+module robo_miner_interfaces {
+  module srv {
+    struct RobotMove_Request {
+      robo_miner_interfaces::msg::RobotMoveType robot_move_type;
+    };
+    struct RobotMove_Response {
+      robo_miner_interfaces::msg::RobotPositionResponse robot_position_response;
+    };
+  };
+};

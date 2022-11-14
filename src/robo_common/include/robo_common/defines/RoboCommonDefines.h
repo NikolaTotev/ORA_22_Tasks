@@ -92,9 +92,9 @@ struct FieldDescription {
 };
 
 struct UserData {
-  std::string user = "not_set";
-  std::string repository = "not_set";
-  std::string commitSha = "not_set";
+  std::string user = "NikolaTotev";
+  std::string repository = "https://github.com/NikolaTotev/ORA_22_Tasks";
+  std::string commitSha = "d6334f2a4746ab7891e8912bd0f86c1ad35c06e4";
 };
 
 inline constexpr int32_t INDICATOR_PANEL_MAX_VALUE = 400;

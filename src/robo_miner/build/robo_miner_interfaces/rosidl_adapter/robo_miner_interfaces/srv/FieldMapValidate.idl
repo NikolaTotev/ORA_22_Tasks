@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_miner_interfaces/srv/FieldMapValidate.srv
+// generated code does not contain a copyright notice
+
+#include "robo_miner_interfaces/msg/UInt8MultiArray.idl"
+
+module robo_miner_interfaces {
+  module srv {
+    struct FieldMapValidate_Request {
+      robo_miner_interfaces::msg::UInt8MultiArray field_map;
+    };
+    struct FieldMapValidate_Response {
+      boolean success;
+
+      string error_reason;
+    };
+  };
+};

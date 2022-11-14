@@ -1,0 +1,3 @@
+RobotMoveType robot_move_type
+---
+RobotPositionResponse robot_position_response

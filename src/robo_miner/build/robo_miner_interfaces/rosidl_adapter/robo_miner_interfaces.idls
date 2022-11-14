@@ -1,0 +1,10 @@
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:msg/FieldPoint.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:msg/RobotPositionResponse.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:msg/UInt8MultiArray.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:msg/RobotMoveType.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:msg/UserAuthenticate.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:srv/ActivateMiningValidate.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:srv/RobotMove.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:srv/LongestSequenceValidate.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:srv/FieldMapValidate.idl
+/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces/rosidl_adapter/robo_miner_interfaces:srv/QueryInitialRobotPosition.idl

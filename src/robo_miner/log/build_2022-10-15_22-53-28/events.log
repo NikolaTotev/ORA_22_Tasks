@@ -1,0 +1,184 @@
+[0.000000] (-) TimerEvent: {}
+[0.000319] (robo_miner_interfaces) JobQueued: {'identifier': 'robo_miner_interfaces', 'dependencies': OrderedDict()}
+[0.000436] (robo_miner_common) JobQueued: {'identifier': 'robo_miner_common', 'dependencies': OrderedDict([('robo_miner_interfaces', '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces')])}
+[0.001271] (robo_miner_gui) JobQueued: {'identifier': 'robo_miner_gui', 'dependencies': OrderedDict([('robo_miner_interfaces', '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces'), ('robo_miner_common', '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_common')])}
+[0.001357] (robo_miner_interfaces) JobStarted: {'identifier': 'robo_miner_interfaces'}
+[0.114889] (robo_miner_interfaces) JobProgress: {'identifier': 'robo_miner_interfaces', 'progress': 'cmake'}
+[0.115218] (-) TimerEvent: {}
+[0.127453] (robo_miner_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces'], 'cwd': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2150'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_gui'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1945'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:37718'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2189,unix/ubuntu2004:/tmp/.ICE-unix/2189'), ('INVOCATION_ID', '5ba47a7b8d8543518a1a708f050eeff2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66a675d7_f5ac_4edd_a825_4a7ab2ca6db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.77'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.216811] (-) TimerEvent: {}
+[0.319944] (-) TimerEvent: {}
+[0.422659] (-) TimerEvent: {}
+[0.524325] (-) TimerEvent: {}
+[0.629528] (-) TimerEvent: {}
+[0.735371] (-) TimerEvent: {}
+[0.851571] (-) TimerEvent: {}
+[0.953947] (-) TimerEvent: {}
+[1.057062] (-) TimerEvent: {}
+[1.159509] (-) TimerEvent: {}
+[1.260555] (-) TimerEvent: {}
+[1.365507] (-) TimerEvent: {}
+[1.466326] (-) TimerEvent: {}
+[1.567051] (-) TimerEvent: {}
+[1.668640] (-) TimerEvent: {}
+[1.771447] (-) TimerEvent: {}
+[1.841267] (robo_miner_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.873341] (-) TimerEvent: {}
+[1.987252] (-) TimerEvent: {}
+[2.089178] (-) TimerEvent: {}
+[2.190651] (-) TimerEvent: {}
+[2.292529] (-) TimerEvent: {}
+[2.393283] (-) TimerEvent: {}
+[2.472536] (robo_miner_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.496658] (-) TimerEvent: {}
+[2.598072] (-) TimerEvent: {}
+[2.600685] (robo_miner_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.699888] (-) TimerEvent: {}
+[2.801293] (-) TimerEvent: {}
+[2.861389] (robo_miner_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.864920] (robo_miner_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.902463] (-) TimerEvent: {}
+[3.003149] (-) TimerEvent: {}
+[3.116032] (-) TimerEvent: {}
+[3.118090] (robo_miner_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.158229] (robo_miner_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.160576] (robo_miner_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.175003] (robo_miner_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.220651] (-) TimerEvent: {}
+[3.328353] (-) TimerEvent: {}
+[3.446079] (-) TimerEvent: {}
+[3.450181] (robo_miner_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.453311] (robo_miner_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.549978] (-) TimerEvent: {}
+[3.661685] (-) TimerEvent: {}
+[3.672693] (robo_miner_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.691362] (robo_miner_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.692191] (robo_miner_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.782200] (-) TimerEvent: {}
+[3.883229] (-) TimerEvent: {}
+[3.985058] (-) TimerEvent: {}
+[4.085838] (-) TimerEvent: {}
+[4.192187] (-) TimerEvent: {}
+[4.293116] (-) TimerEvent: {}
+[4.394355] (-) TimerEvent: {}
+[4.496734] (-) TimerEvent: {}
+[4.604970] (-) TimerEvent: {}
+[4.705702] (-) TimerEvent: {}
+[4.813120] (-) TimerEvent: {}
+[4.914884] (-) TimerEvent: {}
+[5.026447] (-) TimerEvent: {}
+[5.131655] (robo_miner_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[5.131883] (-) TimerEvent: {}
+[5.242776] (-) TimerEvent: {}
+[5.344593] (-) TimerEvent: {}
+[5.359095] (robo_miner_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[5.359480] (robo_miner_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.445220] (-) TimerEvent: {}
+[5.546799] (-) TimerEvent: {}
+[5.653355] (-) TimerEvent: {}
+[5.754200] (-) TimerEvent: {}
+[5.855138] (-) TimerEvent: {}
+[5.956421] (-) TimerEvent: {}
+[6.059119] (-) TimerEvent: {}
+[6.160560] (-) TimerEvent: {}
+[6.261345] (-) TimerEvent: {}
+[6.361931] (-) TimerEvent: {}
+[6.463287] (-) TimerEvent: {}
+[6.488034] (robo_miner_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[6.551268] (robo_miner_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.564980] (-) TimerEvent: {}
+[6.623935] (robo_miner_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[6.665496] (-) TimerEvent: {}
+[6.767754] (-) TimerEvent: {}
+[6.868620] (-) TimerEvent: {}
+[6.970146] (-) TimerEvent: {}
+[7.070801] (-) TimerEvent: {}
+[7.172216] (-) TimerEvent: {}
+[7.273850] (-) TimerEvent: {}
+[7.388634] (-) TimerEvent: {}
+[7.489872] (-) TimerEvent: {}
+[7.590898] (-) TimerEvent: {}
+[7.669560] (robo_miner_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[7.695064] (-) TimerEvent: {}
+[7.765843] (robo_miner_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[7.796549] (-) TimerEvent: {}
+[7.897299] (-) TimerEvent: {}
+[7.999100] (-) TimerEvent: {}
+[8.100628] (-) TimerEvent: {}
+[8.115387] (robo_miner_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.206989] (-) TimerEvent: {}
+[8.312644] (-) TimerEvent: {}
+[8.413799] (-) TimerEvent: {}
+[8.479153] (robo_miner_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[8.514610] (-) TimerEvent: {}
+[8.615382] (-) TimerEvent: {}
+[8.716997] (-) TimerEvent: {}
+[8.824514] (-) TimerEvent: {}
+[8.929668] (-) TimerEvent: {}
+[9.052017] (-) TimerEvent: {}
+[9.153101] (-) TimerEvent: {}
+[9.253587] (-) TimerEvent: {}
+[9.357303] (-) TimerEvent: {}
+[9.458727] (-) TimerEvent: {}
+[9.559427] (-) TimerEvent: {}
+[9.660946] (-) TimerEvent: {}
+[9.763534] (-) TimerEvent: {}
+[9.865042] (-) TimerEvent: {}
+[9.965697] (-) TimerEvent: {}
+[10.066360] (-) TimerEvent: {}
+[10.167343] (-) TimerEvent: {}
+[10.268368] (-) TimerEvent: {}
+[10.369135] (-) TimerEvent: {}
+[10.470357] (-) TimerEvent: {}
+[10.571473] (-) TimerEvent: {}
+[10.674718] (-) TimerEvent: {}
+[10.778095] (-) TimerEvent: {}
+[10.879590] (-) TimerEvent: {}
+[10.980899] (-) TimerEvent: {}
+[11.082591] (-) TimerEvent: {}
+[11.185755] (-) TimerEvent: {}
+[11.287149] (-) TimerEvent: {}
+[11.390135] (-) TimerEvent: {}
+[11.493100] (-) TimerEvent: {}
+[11.596220] (-) TimerEvent: {}
+[11.697332] (-) TimerEvent: {}
+[11.799301] (-) TimerEvent: {}
+[11.900173] (-) TimerEvent: {}
+[12.001544] (-) TimerEvent: {}
+[12.102362] (-) TimerEvent: {}
+[12.203250] (-) TimerEvent: {}
+[12.304967] (-) TimerEvent: {}
+[12.413000] (-) TimerEvent: {}
+[12.520990] (-) TimerEvent: {}
+[12.640652] (-) TimerEvent: {}
+[12.761505] (-) TimerEvent: {}
+[12.862813] (-) TimerEvent: {}
+[12.964469] (-) TimerEvent: {}
+[13.065044] (-) TimerEvent: {}
+[13.168461] (-) TimerEvent: {}
+[13.269077] (-) TimerEvent: {}
+[13.369559] (-) TimerEvent: {}
+[13.470244] (-) TimerEvent: {}
+[13.570847] (-) TimerEvent: {}
+[13.683454] (-) TimerEvent: {}
+[13.774017] (robo_miner_interfaces) CommandEnded: {'returncode': -2}
+[13.783701] (-) TimerEvent: {}
+[13.884907] (-) TimerEvent: {}
+[13.985640] (-) TimerEvent: {}
+[14.086431] (-) TimerEvent: {}
+[14.187216] (-) TimerEvent: {}
+[14.289521] (-) TimerEvent: {}
+[14.391057] (-) TimerEvent: {}
+[14.492936] (-) TimerEvent: {}
+[14.593527] (-) TimerEvent: {}
+[14.695015] (-) TimerEvent: {}
+[14.795713] (-) TimerEvent: {}
+[14.897020] (-) TimerEvent: {}
+[14.997963] (-) TimerEvent: {}
+[15.100455] (-) TimerEvent: {}
+[15.201155] (-) TimerEvent: {}
+[15.301700] (-) TimerEvent: {}
+[15.325918] (robo_miner_interfaces) JobEnded: {'identifier': 'robo_miner_interfaces', 'rc': 'SIGINT'}
+[15.327673] (robo_miner_common) JobSkipped: {'identifier': 'robo_miner_common'}
+[15.327814] (robo_miner_gui) JobSkipped: {'identifier': 'robo_miner_gui'}
+[15.327844] (-) EventReactorShutdown: {}

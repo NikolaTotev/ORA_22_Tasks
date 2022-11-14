@@ -1,0 +1,15 @@
+{
+  "package_name": "robo_miner_interfaces",
+  "non_idl_tuples": [
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:msg/FieldPoint.msg",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:msg/RobotPositionResponse.msg",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:msg/UInt8MultiArray.msg",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:msg/RobotMoveType.msg",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:msg/UserAuthenticate.msg",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:srv/ActivateMiningValidate.srv",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:srv/RobotMove.srv",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:srv/LongestSequenceValidate.srv",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:srv/FieldMapValidate.srv",
+    "/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces:srv/QueryInitialRobotPosition.srv"
+  ]
+}

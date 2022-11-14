@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robo_miner_interfaces/msg/RobotPositionResponse.msg
+// generated code does not contain a copyright notice
+
+
+module robo_miner_interfaces {
+  module msg {
+    typedef uint8 uint8__3[3];
+    module RobotPositionResponse_Constants {
+      const int32 DIRECTION_UP = 0;
+      const int32 DIRECTION_RIGHT = 1;
+      const int32 DIRECTION_DOWN = 2;
+      const int32 DIRECTION_LEFT = 3;
+    };
+    struct RobotPositionResponse {
+      boolean success;
+
+      string error_reason;
+
+      @verbatim (language="comment", text=
+        "surrounding_tiles are reported in order: left, forward, right")
+      uint8__3 surrounding_tiles;
+
+      int32 robot_dir;
+    };
+  };
+};

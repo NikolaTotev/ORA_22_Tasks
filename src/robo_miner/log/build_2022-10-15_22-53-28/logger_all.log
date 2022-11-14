@@ -1,0 +1,143 @@
+[0.590s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.590s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa01f2506a0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa01f2506a0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fa01f250be0>)
+[0.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.663s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extensions ['ignore', 'ignore_ament_install']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extension 'ignore'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extension 'ignore_ament_install'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extensions ['colcon_pkg']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extension 'colcon_pkg'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extensions ['colcon_meta']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extension 'colcon_meta'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extensions ['ros']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_common) by extension 'ros'
+[0.708s] DEBUG:colcon.colcon_core.package_identification:Package 'robo_miner_common' with type 'ros.ament_cmake' and name 'robo_miner_common'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extension 'ignore_ament_install'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extensions ['colcon_pkg']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extension 'colcon_pkg'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extensions ['colcon_meta']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extension 'colcon_meta'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extensions ['ros']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_gui) by extension 'ros'
+[0.711s] DEBUG:colcon.colcon_core.package_identification:Package 'robo_miner_gui' with type 'ros.ament_cmake' and name 'robo_miner_gui'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extension 'ignore'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extension 'ignore_ament_install'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extensions ['colcon_pkg']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extension 'colcon_pkg'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extensions ['colcon_meta']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extension 'colcon_meta'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extensions ['ros']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(robo_miner_interfaces) by extension 'ros'
+[0.715s] DEBUG:colcon.colcon_core.package_identification:Package 'robo_miner_interfaces' with type 'ros.ament_cmake' and name 'robo_miner_interfaces'
+[0.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.837s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/foxy
+[0.840s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.532s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.532s] DEBUG:colcon.colcon_core.verb:Building package 'robo_miner_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces', 'merge_install': False, 'path': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.534s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'cmake_args' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'cmake_target' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'cmake_clean_cache' from command line to 'False'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'cmake_clean_first' from command line to 'False'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'cmake_force_configure' from command line to 'False'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'ament_cmake_args' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'catkin_cmake_args' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_common' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.535s] DEBUG:colcon.colcon_core.verb:Building package 'robo_miner_common' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_common', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_common', 'merge_install': False, 'path': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_common', 'symlink_install': False, 'test_result_base': None}
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'cmake_args' from command line to 'None'
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'cmake_target' from command line to 'None'
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'cmake_clean_cache' from command line to 'False'
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'cmake_clean_first' from command line to 'False'
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'cmake_force_configure' from command line to 'False'
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'ament_cmake_args' from command line to 'None'
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'catkin_cmake_args' from command line to 'None'
+[1.537s] Level 5:colcon.colcon_core.verb:set package 'robo_miner_gui' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.537s] DEBUG:colcon.colcon_core.verb:Building package 'robo_miner_gui' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_gui', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_gui', 'merge_install': False, 'path': '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_gui', 'symlink_install': False, 'test_result_base': None}
+[1.538s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.547s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.548s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces' with build type 'ament_cmake'
+[1.548s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces'
+[1.613s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.614s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.614s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces
+[15.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[15.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[15.322s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo_miner_interfaces)
+[15.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/build/robo_miner_interfaces' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/robo_miner_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces
+[16.760s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces' for CMake module files
+[16.760s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces' for CMake config files
+[16.761s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/bin'
+[16.761s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/lib/pkgconfig/robo_miner_interfaces.pc'
+[16.761s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/lib/python3.8/site-packages'
+[16.761s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/bin'
+[16.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/share/robo_miner_interfaces/package.ps1'
+[16.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/share/robo_miner_interfaces/package.dsv'
+[16.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/share/robo_miner_interfaces/package.sh'
+[16.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/share/robo_miner_interfaces/package.bash'
+[16.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/share/robo_miner_interfaces/package.zsh'
+[16.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/robo_miner_interfaces/share/colcon-core/packages/robo_miner_interfaces)
+[16.876s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[16.876s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.876s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.876s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[17.156s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[17.158s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[17.158s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[17.200s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.203s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/local_setup.ps1'
+[17.215s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/_local_setup_util_ps1.py'
+[17.219s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/setup.ps1'
+[17.258s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/local_setup.sh'
+[17.295s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/_local_setup_util_sh.py'
+[17.297s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/setup.sh'
+[17.301s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/local_setup.bash'
+[17.303s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/setup.bash'
+[17.316s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/local_setup.zsh'
+[17.327s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ORA_22_Repos/ORA_22_Tasks/src/robo_miner/install/setup.zsh'

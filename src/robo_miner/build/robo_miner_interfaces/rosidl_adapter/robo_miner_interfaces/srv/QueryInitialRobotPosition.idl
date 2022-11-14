@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_miner_interfaces/srv/QueryInitialRobotPosition.srv
+// generated code does not contain a copyright notice
+
+#include "robo_miner_interfaces/msg/RobotPositionResponse.idl"
+
+module robo_miner_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "empty request")
+    struct QueryInitialRobotPosition_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct QueryInitialRobotPosition_Response {
+      robo_miner_interfaces::msg::RobotPositionResponse robot_position_response;
+
+      uint8 robot_initial_tile;
+    };
+  };
+};

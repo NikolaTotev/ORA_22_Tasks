@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robo_miner_interfaces/msg/UInt8MultiArray.msg
+// generated code does not contain a copyright notice
+
+
+module robo_miner_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      " 2D array representated as 1D array")
+    struct UInt8MultiArray {
+      @verbatim (language="comment", text=
+        " to simulate access to ith row, jth cols 'arr[i][j]'" "\n"
+        " access the element under 'data[(i * cols) + j]'")
+      uint32 rows;
+
+      uint32 cols;
+
+      sequence<uint8> data;
+    };
+  };
+};
