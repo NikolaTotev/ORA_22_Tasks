@@ -36,6 +36,7 @@ void URFinalBridge::run()
 void URFinalBridge::sendUrScript(){
  std_msgs::msg::String msg;
  std::cout<<"sending movej"<<std::endl;
-  msg.data = "def leanForward():\n\tmovej([0.4537856055,-2.00712864,-2.059488517,-0.6457718232,1.570796327,2.024581932], a=5.0, v=1.0)\nend\n";
+ 
+  msg.data = "def leanForward():\n\tmovel([0.491,-0.134,0.1,2.224,-2.224,0], a=1.0, v=0.42)\nend\n";
   _urscriptPublisher->publish(msg);
 }
